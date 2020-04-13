@@ -74,7 +74,7 @@ button.btn-purple {text-align: center; background: #6737B8;}
 button.btn-green {text-align: center; background: rgba(117,177,64,1);}
 button.btn-purple:hover, button:active, button:focus {background: #5727a9;}
 button.btn-green:hover, button:active, button:focus {background: #497a1e;}
-a {color: #999; text-decoration: none; position: relative; line-height: 20px; display: inline-block; margin: 0; transition: all 500ms ease;}
+a {color: #999; text-decoration: none; position: relative; line-height: 20px; display: inline-block; margin: 0; transition: all 500ms ease; font-weight: 700;}
 a:hover {color: #5727a9;}
 a:before {background: #999; content: ''; position: absolute; bottom: 0; left: 0; height: 1px; width: 0; transition: all 500ms ease;}
 a:hover:before {width: 100%; background: #5727a9;}
