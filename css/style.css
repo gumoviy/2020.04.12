@@ -56,7 +56,7 @@ form .card-header {background: #6737B8; padding: 20px; margin: 0; border: 2px so
 form .card-header * {color: #fff; margin: 0; padding: 0;}
 form .card-body {background: #f2f2f2; padding: 20px; margin: 0; overflow: hidden; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; box-sizing: border-box;}
 form .card-body > div {position: relative; margin-bottom: 20px;}
-form .card-body > div label {position: absolute; top: 50%; left: 20px; transform: translateY(-50%); transition: all 500ms ease;}
+form .card-body > div label {position: absolute; top: 50%; left: 20px; transform: translateY(-50%); transition: all 500ms ease; font-weight: 700;}
 input[type="text"]:focus + label, input[type="password"]:focus + label, input[type="email"]:focus + label, input:required:valid + label {top: -18px; font-size: 12px; transform: translateY(0); left: 0;}
 form .card-body > div:last-of-type {display: flex; justify-content: space-between; align-items: center;}
 form .card-body > div i:before {transition: all 500ms ease;}
