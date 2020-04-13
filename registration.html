@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body class="registration preload">
+        <div class="container">
+            <form method="GET" action="#" class="row">
+                <div class="card-media-left">
+                    <img src="images/covid-logo.png" />
+                </div>
+                <div class="card-body">
+                    <div>
+                        <h3 class="text-center">Регистрация</h3>
+                    </div>
+                    <div>
+                        <input type="text" id="name" placeholder="" required />
+                        <label for="name">Ваше имя</label>
+                        <i class="icon-user"></i>
+                    </div>
+                    <div>
+                        <input type="email" id="email" placeholder="" required />
+                        <label for="email">Ваш email</label>
+                        <i class="icon-mail"></i>
+                    </div>
+                    <div>
+                        <input type="password" id="password" placeholder="" required />
+                        <label for="password">Пароль</label>
+                        <i class="icon-lock"></i>
+                    </div>
+                    <div>
+                        <input type="password" id="password2" placeholder="" required />
+                        <label for="password2">Подтвердите пароль</label>
+                        <i class="icon-lock"></i>
+                    </div>
+                    
+                    
+                    <div>
+                        <button type="submit" class="btn-green">Регистрация</button>
+                        <a href="index.html">Авторизация</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            setTimeout(function(){
+                $("body").removeClass("preload");
+            },150);
+        });
+        
+        /* скрипт взял на просторах интернета )) */
+        (function() {
+            document.addEventListener("mousemove", parallax);
+            const elem = document.querySelector(".card-media-left");
+            function parallax(e) {
+                let _w = window.innerWidth/2;
+                let _h = window.innerHeight/2;
+                let _mouseX = e.clientX;
+                let _mouseY = e.clientY;
+                let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+                let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+                let x = `${_depth2}, ${_depth1}`;
+                console.log(x);
+                elem.style.backgroundPosition = x;
+            }
+
+        })();
+    </script>
+</html>

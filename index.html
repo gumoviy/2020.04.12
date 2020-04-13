@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <script>
+            $(window).load(function() {
+                $("body").removeClass("preload");
+            });
+        </script>
+    </head>
+    <body class="preload">
+        <div class="container">
+            <form method="GET" action="#">
+                <div class="card-header"><h3>Авторизируйтесь</h3></div>
+                <div class="card-body">
+                    <div>
+                        <input type="text" placeholder="Ваше имя" required />
+                        <i class="icon-user"></i>
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Ваш пароль" required />
+                        <i class="icon-lock"></i>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn-purple">Войти</button>
+                        <a href="#">Забыли пароль?</a>
+                        <a href="registration.html">Регистрация</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        jQuery(document).ready(function($) {
+            setTimeout(function(){
+                $("body").removeClass("preload");
+            },150);
+        });
+    </script>
+</html>
