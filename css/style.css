@@ -54,6 +54,7 @@ form:focus-within {box-shadow: 0 0 30px 10px rgba(58,17,111,.4);}
 .registration form:focus-within {box-shadow: 0 0 30px 10px rgba(73,122,30,.6);}
 form .card-header {background: #6737B8; padding: 20px; margin: 0; border: 2px solid rgba(255,255,255,.05); border-top-left-radius: 3px; border-top-right-radius: 3px; overflow: hidden; position: relative;}
 form .card-header * {color: #fff; margin: 0; padding: 0;}
+form .card-header h3 {padding-right: 30px;}
 form .card-body {background: #f2f2f2; padding: 20px; margin: 0; overflow: hidden; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; box-sizing: border-box;}
 form .card-body > div {position: relative; margin-bottom: 20px;}
 form .card-body > div label {position: absolute; top: 50%; left: 20px; transform: translateY(-50%); transition: all 500ms ease; font-weight: 700; cursor: text;}
