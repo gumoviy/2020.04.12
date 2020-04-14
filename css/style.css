@@ -52,7 +52,7 @@ h3 {margin-top: 0;}
 form {padding: 0; margin: 0; overflow: hidden; box-shadow: 0 0 20px 0 rgba(58,17,111,.8); transition: all 500ms ease; border-radius: 3px; overflow: hidden;}
 form:focus-within {box-shadow: 0 0 30px 10px rgba(58,17,111,.4);}
 .registration form:focus-within {box-shadow: 0 0 30px 10px rgba(73,122,30,.6);}
-form .card-header {background: #6737B8; padding: 20px; margin: 0; border: 2px solid rgba(255,255,255,.05); border-top-left-radius: 3px; border-top-right-radius: 3px; overflow: hidden;}
+form .card-header {background: #6737B8; padding: 20px; margin: 0; border: 2px solid rgba(255,255,255,.05); border-top-left-radius: 3px; border-top-right-radius: 3px; overflow: hidden; position: relative;}
 form .card-header * {color: #fff; margin: 0; padding: 0;}
 form .card-body {background: #f2f2f2; padding: 20px; margin: 0; overflow: hidden; border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; box-sizing: border-box;}
 form .card-body > div {position: relative; margin-bottom: 20px;}
@@ -86,10 +86,8 @@ input:required:focus:valid + i:before, input:required:valid + i:before, input:re
 input:focus:invalid {
   border: 1px solid #5727a9;
 }
-.close-icon:after {
-  display: inline-block;
-  content: "\00d7";
-}
+.close-icon {font-size: 20px; position: absolute; right: 20px; top: 50%; transform: translateY(-50%);}
+.close-icon:after {display: inline-block; content: "\00d7";}
 @media (max-width: 580px) {
     form .card-media-left {display: none;}
     form .card-media-left + .card-body {width: 100%;}
