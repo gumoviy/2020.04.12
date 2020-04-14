@@ -86,6 +86,10 @@ input:required:focus:valid + i:before, input:required:valid + i:before, input:re
 input:focus:invalid {
   border: 1px solid #5727a9;
 }
+.close-icon:after {
+  display: inline-block;
+  content: "\00d7";
+}
 @media (max-width: 580px) {
     form .card-media-left {display: none;}
     form .card-media-left + .card-body {width: 100%;}
